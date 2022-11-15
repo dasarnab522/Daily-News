@@ -7,10 +7,10 @@ export class NewsItem extends Component {
       <div className='my-3 p-3 mb-2 bg-info'>
         <div className="card"/>
         <img src={imgUrl} className="card-img-top" alt="..."/>
-        <div className="card-body">
-            <h5 className="card-title"><strong>{title}</strong></h5>
+        <div className="card-body text-center">
+            <h5 className="card-title text-danger"><strong>{title}</strong></h5>
             <p className="card-text">{desc}</p>
-            <p className='card-text'><small className='text-muted'>{name} on {new Date(date).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</small></p>
+            <p className='card-text'><small className='text-danger'>{name} on {new Date(date).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</small></p>
             <a href={newsUrl} rel="noreferrer" className="btn btn-sm btn-primary">Read more</a>
   </div>
 </div>
