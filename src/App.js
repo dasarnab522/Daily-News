@@ -2,6 +2,7 @@ import './App.css';
 import React, { Component } from 'react'
 import NavBar from './component/NavBar';
 import News from './component/News';
+import Jokes from './component/Jokes'
 import {
   BrowserRouter as Router,
   Routes,
@@ -13,6 +14,7 @@ export default class App extends Component {
       <div className="p-3 mb-2 bg-dark">
         <Router>
           <NavBar/>
+          <Jokes/>
         <Routes>
           <Route exact path="/" element={<News key='science' country={'in'} category="science" pageSize={48}/>}></Route>
           <Route exact path="/business" element={<News key='business' country={'in'} category="business"  pageSize={48}/>}></Route>
